@@ -33,7 +33,7 @@ c = b ^ (F(a ^ F(d) ^ (a | d)))
 b = tempa ^ (F(a | F(c ^ F(d)) ^ F(a | c) ^ d))
 ```
 
-third:
+third step:
 
 read the encrypted message from the [flag](https://github.com/nora9/Assignment2/blob/master/flag.enc) file
 
@@ -41,7 +41,7 @@ read the encrypted message from the [flag](https://github.com/nora9/Assignment2/
 ct = open(r"flag.enc","rb").read()
 ```
 
-fourth:
+fourth step:
 
 decrypt the message and then display the result
 ```python
@@ -49,7 +49,7 @@ pt = "".join(decrypt(ct[i:i+16]) for i in range(0,len(ct), 16))
 print (pt)
 ```
 
-fifth:
+fifth step:
 
 submit result
 
