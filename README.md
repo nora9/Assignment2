@@ -2,7 +2,7 @@
 ## [Decryption function](https://github.com/nora9/Assignment2/blob/master/assignment2.py)
 the main idea is reverse the [Encryption function](https://github.com/nora9/Assignment2/blob/master/encrypt.py) process
 
-first step:
+#### first step:
 
 write F(w) as the same in the [Encryption function](https://github.com/nora9/Assignment2/blob/master/encrypt.py)
 
@@ -11,7 +11,7 @@ def F(w):
 	return ((w * 31337) ^ (w * 1337 >> 16)) % 2**32
 ```
 
-second step:
+#### second step:
 
 writing decrytion function by reversing the two steps in the [Encryption function](https://github.com/nora9/Assignment2/blob/master/encrypt.py) and repeat these 32 times
 
@@ -33,7 +33,7 @@ c = b ^ (F(a ^ F(d) ^ (a | d)))
 b = tempa ^ (F(a | F(c ^ F(d)) ^ F(a | c) ^ d))
 ```
 
-third step:
+#### third step:
 
 read the encrypted message from the [flag](https://github.com/nora9/Assignment2/blob/master/flag.enc) file
 
@@ -41,7 +41,7 @@ read the encrypted message from the [flag](https://github.com/nora9/Assignment2/
 ct = open(r"flag.enc","rb").read()
 ```
 
-fourth step:
+#### fourth step:
 
 decrypt the message and then display the result
 ```python
@@ -49,7 +49,7 @@ pt = "".join(decrypt(ct[i:i+16]) for i in range(0,len(ct), 16))
 print (pt)
 ```
 
-fifth step:
+#### fifth step:
 
 submit result
 
