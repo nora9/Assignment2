@@ -35,7 +35,7 @@ b = tempa ^ (F(a | F(c ^ F(d)) ^ F(a | c) ^ d))
 
 third:
 
-read the encrypted message from the [flag](https://github.com/nora9/Assignment2/blob/master/flag.enc)
+read the encrypted message from the [flag](https://github.com/nora9/Assignment2/blob/master/flag.enc) file
 
 ```python
 ct = open(r"flag.enc","rb").read()
