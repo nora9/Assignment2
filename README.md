@@ -13,7 +13,7 @@ def F(w):
 
 second step:
 
-writing decrytion function in two steps and repeat these 32 times
+writing decrytion function by reversing the two steps in the [Encryption function](https://github.com/nora9/Assignment2/blob/master/encrypt.py) and repeat these 32 times
 
 1-
 ```python
