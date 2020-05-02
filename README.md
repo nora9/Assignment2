@@ -49,7 +49,7 @@ pt = "".join(decrypt(ct[i:i+16]) for i in range(0,len(ct), 16))
 print (pt)
 ```
 
-#### fifth step:
+#### finally:
 
 submit result
 
