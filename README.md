@@ -18,10 +18,10 @@ writing decrytion function by reversing the two steps in the [Encryption functio
 1-
 ```python
 tempa = a
-        d = d ^ 1337
-        a = c ^ (F(d | F(d) ^ d))
-        b = b ^ (F(d ^ F(a) ^ (d | a)))
-        c = tempa ^ (F(d | F(b ^ F(a)) ^ F(d | b) ^ a))
+d = d ^ 1337
+a = c ^ (F(d | F(d) ^ d))
+b = b ^ (F(d ^ F(a) ^ (d | a)))
+c = tempa ^ (F(d | F(b ^ F(a)) ^ F(d | b) ^ a))
 ```
 
 2-
